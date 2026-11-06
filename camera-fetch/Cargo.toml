@@ -1,0 +1,8 @@
+[package]
+name = "camera-fetch"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+reqwest = { version = "0.13", default-features = false, features = ["blocking"] }

@@ -1,0 +1,13 @@
+[workspace]
+members = [".", "camera-fetch", "drive"]
+resolver = "3"
+
+[package]
+name = "car-tracker"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+opencv = { version = "0.101.1", default-features = false, features = ["imgcodecs", "imgproc", "objdetect", "calib3d", "geometry"] }
+reqwest = { version = "0.13", default-features = false, features = ["blocking"] }
